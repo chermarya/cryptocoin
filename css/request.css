@@ -1,0 +1,9 @@
+h1{margin: 50px, 0;}
+p{text-align: center;}
+table{ 
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+.col{width: 100px;}
+.status{background-color: rgb(251, 255, 44); border-radius: 5px; padding: 4px;}
+#wallet{font-size: 12px;}

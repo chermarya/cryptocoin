@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocoin</title>
+  <link rel="shortcut icon" href="../img/alexa.svg">
+
+  <link rel="stylesheet" href="../css/request.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/add.css">
+  <link rel="stylesheet" href="../css/medias.css">
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body onload="load()">
+    <canvas id="canvas"></canvas>
+    <header>
+      <img src="../img/alexa.svg" id="logo">
+      <span id="name">Cryptocoin.change</span>
+      <img src="../img/clock.svg" id="clock"><a href="./support.html">Tех. поддержка</a>
+    </header>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" id="box" disabled>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="../index.html"><li>Обменять</li></a>
+          <a href="../pages/faq.html"><li>FAQ</li></a>
+          <a href="../pages/partners.html"><li>Партнерам</li></a>
+          <a href="../pages/reserves.html"><li>Резервы</li></a>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <h1>Заявка</h1>
+        <p id="request_id">ID: 0000</p>
+        <table class="req">
+            <tr>
+                <td class="col">Дата:</td>
+                <td id="time">ГГГГ-ММ-ДД ЧЧ:ММ:СС</td>
+            </tr>
+            <tr>
+                <td class="col">Сумма:</td>
+                <td id="sum_give">0</td>
+            </tr>
+            <tr>
+                <td class="col">Курс:</td>
+                <td id="rate">00.000000</td>
+            </tr>
+            <tr>
+                <td class="col">Получаете:</td>
+                <td id="sum_receive">000.000000</td>
+            </tr>
+            <tr>
+                <td class="col">Отдаете:</td>
+                <td id="curr_give">Bitcoin</td>
+            </tr>
+            <tr>
+                <td class="col">Принимаете:</td>
+                <td id="curr_receive">Tether</td>
+            </tr>
+            <tr>
+                <td class="col">Получатель:</td>
+                <td id="wal" class="com">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+            </tr>
+            <tr>
+                <td class="col">E-mail:</td>
+                <td id="mail">example@gmail.com</td>
+            </tr>
+        </table>
+        <p>Статус: <i class="status">На проверке</i></p>
+        <hr width="80%" color="#000">
+        <p>Оплатите комиссию</p>
+        <table class="com">
+            <tr>
+                <td class="col">Сумма:</td>
+                <td id="time">1 USDT</td>
+            </tr>
+            <tr>
+                <td class="col">Реквизиты:</td>
+                <td>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+      <span>© Cryptocoin.change 2020-2022</span>
+      <a href="./support.html" id="hidden_support">Tех. поддержка</a>
+      <a href="./agreement.html">Пользовательское соглашение</a>
+      <a href="./confidence.html">Политика конденфициальности</a>
+    </footer>
+    <script src="../js/select.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/backgroung.js"></script>
+</body>
+</html>

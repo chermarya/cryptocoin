@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocoin</title>
+  <link rel="shortcut icon" href="../img/alexa.svg">
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/add.css">
+  <link rel="stylesheet" href="../css/medias.css">
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <header>
+      <img src="../img/alexa.svg" id="logo">
+      <span id="name">Cryptocoin.change</span>
+      <img src="../img/clock.svg" id="clock"><a href="./support.html">Tех. поддержка</a>
+    </header>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" id="box" disabled>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <li><a href="../index.html">Обменять</a></li>
+          <li><a href="../pages/faq.html">FAQ</a></li>
+          <li><a href="../pages/partners.html">Партнерам</a></li>
+          <li><a href="../pages/reserves.html">Резервы</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Резервы</h1>
+        <section>
+          <div style="text-align: center;">
+            <div class="form_radio_btn">
+              <input id="radio-1" type="radio" name="radio" checked onchange="page()">
+              <label for="radio-1">USD</label>
+            </div>
+            <div class="form_radio_btn">
+              <input id="radio-2" type="radio" name="radio" onchange="page()">
+              <label for="radio-2">EUR</label>
+            </div>
+            <div class="form_radio_btn">
+              <input id="radio-3" type="radio" name="radio" onchange="page()">
+              <label for="radio-3">UAH</label>
+            </div>
+            <div class="form_radio_btn">
+              <input id="radio-4" type="radio" name="radio" onchange="page()">
+              <label for="radio-4">RUB</label>
+            </div>
+          </div>
+            <div class="reserv" id="visa">
+              <p style="margin: 15px 0;"><img src="../img/visa.png" width="80%"></p>
+              <span class="amount" id="amount1">2 101 025</span>
+              <p class="card">VISA</p>
+            </div>
+            <div class="reserv" id="master">
+              <p style="margin: 5px 0;"><img src="../img/master.png" width="80%"></p>
+              <span class="amount" id="amount2">103 210</span>
+              <p class="card">MASTER</p>
+            </div>
+            <div class="reserv" id="qiwi">
+              <p style="margin: 5px 0;"><img src="../img/qiwi.png" width="80%"></p>
+              <span class="amount" id="amount3">11 025</span>
+              <p class="card">QIWI</p>
+            </div>
+            <div class="reserv" id="payeer" style="display: none;">
+              <p style="margin: 18px 0;"><img src="../img/payeer.png" width="80%"></p>
+              <span class="amount" id="amount4"></span>
+              <p class="card">PAYEER</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+      <span>© Cryptocoin.change 2020-2022</span>
+      <a href="./support.html" id="hidden_support">Tех. поддержка</a>
+      <a href="./agreement.html">Пользовательское соглашение</a>
+      <a href="./confidence.html">Политика конденфициальности</a>
+    </footer>
+    <script  src="../js/script.js"></script>
+    <script  src="../js/backgroung.js"></script>
+</body>
+</html>

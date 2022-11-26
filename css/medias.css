@@ -1,0 +1,115 @@
+@media (max-width: 1440px) {
+    #menuToggle{width: 150px; padding: 0;}
+}
+@media (max-width: 1200px) {
+    .container{width: 70%;}
+    .container-ind{width: 75%; transform: translate(25%, 0);}
+}
+@media (max-width: 1024px) {
+    /* index */
+    .container-ind{width: 70%; transform: translate(35%, 0);}
+    .trade-block{width: 42%;}
+    .container-ind{overflow-y: scroll; height: calc(80% - 100px);}
+    .trade-block{width: 90%;}
+    .trade{width: 100%; padding-right: 0;}
+    .container-ind::-webkit-scrollbar{
+        width: 10px;  
+        background-color: #0000002f;
+        border-radius: 20px;
+        margin: 5px, 0;
+    }
+    .container-ind::-webkit-scrollbar-thumb{
+        background-color: #9a9a9a;
+        border-radius: 20px;
+    }
+    /* request */
+    .com{font-size: 13px;}
+}
+@media (max-width: 800px) {
+    /* main */
+    #logo{
+        width: 45px; 
+        margin-left: 50px; 
+        margin-right: -10px;
+    }
+    #clock{width: 12px; margin-left: 0;}
+    header span{font-size: 25px; padding-right: 12px;}
+    header a{font-size: 15px;}
+    footer{font-size: 13px;}
+    #menuToggle span{top: -30px; left: -17px;}
+    #menuToggle input:checked ~ span{opacity: 1;}
+    #menu li{font-size: 20px;}
+    /* add-blocks */
+    .container, .container-ind{
+        width: 80%;
+        transform: translate(0, 0);
+        margin-left: 10%;
+    }
+    section{height: calc(83% - 30px);}
+    /* support */
+    .supp{font-size: 15px;}
+    /* faq */
+    summary{font-size: 15px;}
+}
+@media (max-width: 700px) {
+    .trade-block{width: 90%;}
+    .container-ind{overflow-y: scroll;}
+    .trade{width: 100%; padding-right: 0;}
+    /* request */
+    .req, .com{font-size: 11.5px;}
+}
+@media (max-width: 580px) {
+    #num_give, #num_receive{font-size: 23px;}
+    /* main */
+    #name{font-size: 22px;}
+    #clock, header a{display: none;}
+    #hidden_support{display: block;}
+    /* footer */
+    footer{
+        background: #00000050;  
+        color: rgb(135, 135, 135);
+        padding: 10px;
+        width: calc(96% - 20px);
+        border-radius: 20px;
+    }
+    footer a{text-align: center; width: 100%; color: rgb(135, 135, 135);}
+    footer span{margin-bottom: 10px;}
+    /* add-blocks */
+    .container{height: calc(100% - 220px);}
+    .container h1 {font-size: 17.5px;}
+    .container h3 {font-size: 14px;}
+    .container p {font-size: 12px;}
+    /* reserves */
+    .form_radio_btn label {font-size: 12px; padding: 0px 10px;}
+    .reserv{width: 70px;}
+    .amount{font-size: 17.5px;}
+    /* request */
+    .req{width: 100%;}
+    .req td, .com td{float: left;}
+    .com{font-size: 10px;}
+    .col{width: 80px;}
+}
+@media (max-width: 360px) {
+    /* main */
+    header {height: 40px;}
+    #box {top: -35px; left: -20px;}
+    #logo{width: 35px;}
+    #name{font-size: 20px;}
+    /* index */
+    select, #email, #wallet {margin-top: 10px;}
+    .num, .mon {margin-top: 20px;}
+    #curr1, #curr2{width: 50px;transform: translate(50%, 30%);}
+    #num_give, #num_receive{font-size: 19px;}
+    /* add-blocks */
+    .container h1 {margin-bottom: 20px;}
+    /* reserves */
+    .reserv{margin-left: 20px;}
+    /* request */
+    .com{font-size: 9px;}
+}
+@media (max-width: 320px) {
+    #name{font-size: 16px;}
+    .form_radio_btn label {font-size: 10px; padding: 0px 5px;}
+    .com{font-size: 7px;}
+    #curr1, #curr2{width: 15px;}
+}

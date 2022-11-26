@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocoin</title>
+  <link rel="shortcut icon" href="./img/alexa.svg">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/medias.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <header>
+      <img src="img/alexa.svg" id="logo">
+      <span id="name">Cryptocoin.change</span>
+      <img src="img/clock.svg" id="clock"><a href="./pages/support.html">Tех. поддержка</a>
+    </header>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" id="box" disabled>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="./index.html"><li>Обменять</li></a>
+          <a href="pages/faq.html"><li>FAQ</li></a>
+          <a href="pages/partners.html"><li>Партнерам</li></a>
+          <a href="pages/reserves.html"><li>Резервы</li></a>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-ind">
+      <button class="exchange" onclick="valid()">Обменять</button>
+        <div class="trade">
+          <div class="trade-block">
+              <p>Отправитель</p>
+              <input type="email" id="email" placeholder="E-mail">
+              <div class="dropdown">
+                <button onclick="dropMenu1()" class="dropbtn" id="name_give1">Bitcoin</button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <a><button onclick="bitcoin1()">Bitcoin</button></a>
+                    <a><button onclick="tether1()">Tether</button></a>
+                    <a><button onclick="etherium1()">Etherium</button></a>
+                    <a><button onclick="cardano1()">Cardano</button></a>
+                    <a><button onclick="solana1()">Solana</button></a>
+                </div>
+              </div>
+              <input type="number" class="num" min="0" id="num_give" value="1" onblur="counting()">
+              <img src="./img/bit.png" width="60px" id="curr1">
+              <hr size="2px" color="#000">
+          </div>
+          <div class="trade-block">
+              <p>Получатель</p>
+              <input type="text" id="wallet" placeholder="Wallet">
+              <div class="dropdown">
+                <button onclick="dropMenu2()" class="dropbtn" id="name_give2">Tether</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a><button onclick="bitcoin2()">Bitcoin</button></a>
+                    <a><button onclick="tether2()">Tether</button></a>
+                    <a><button onclick="etherium2()">Etherium</button></a>
+                    <a><button onclick="cardano2()">Cardano</button></a>
+                    <a><button onclick="solana2()">Solana</button></a>
+                </div>
+              </div>
+              <input type="text" class="num" disabled id="num_receive" value="17656.8297">
+              <img src="./img/usdt.png" width="60px" id="curr2">
+              <hr size="2px" color="#000">
+          </div>
+          </div>
+    </div>
+    <footer>
+      <span>© Cryptocoin.change 2020-2022</span>
+      <a href="./pages/support.html" id="hidden_support">Tех. поддержка</a>
+      <a href="./pages/agreement.html">Пользовательское соглашение</a>
+      <a href="./pages/confidence.html">Политика конденфициальности</a>
+    </footer>
+    <script  src="js/select.js"></script>
+    <script  src="js/script.js"></script>
+    <script  src="js/backgroung.js"></script>
+</body>
+</html>
